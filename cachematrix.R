@@ -1,6 +1,6 @@
 ## creates a special matrix and caches its inverse to prevent repeated computation
 
-## 
+## create and cache inverse of a special matrix
 makeCacheMatrix <- function(x = matrix()) {
     I <- NULL # Set the inverse equal to NULL
     
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
          getInverse = getInverse)   # creates a list of the functions   
 }
 
-## Computes of above defined matrix if it hasnt been computed already
+## Computes inverse of above defined matrix if it hasn't been computed already
 
 cacheSolve <- function(x, ...) {
     I <- x$getInverse()   # Retrives the most recent value for the inverse
