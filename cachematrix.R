@@ -28,7 +28,7 @@ cacheSolve <- function(x, ...) {
         return(I)   # If the value of Inverse is NOT null        
     }
     # Else calculate the inverse of the matrix
-    message("newly calculating data")
+    message("new inverse calculated")
     data <- x$get()
     I <- solve(data, ...)
     x$setInverse(I)
